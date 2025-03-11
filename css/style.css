@@ -46,6 +46,13 @@ header{
   z-index: 1; 
   max-width: 100%; 
 }
+.footer-menu{
+  list-style:none;
+}
+.footer-menu li a{
+  color:white;
+  text-decoration: none;
+}
 .main-menu li{
   display:inline;
   margin-left: 20px;
