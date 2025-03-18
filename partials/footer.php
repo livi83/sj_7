@@ -33,8 +33,8 @@
   Created and designed by Lívia
 </div>
 </footer>
-
-<script src="js/menu.js"></script>
-<script src="js/slider.js"></script>
+  <?php
+    add_scripts();
+  ?>
 </body>
 </html>

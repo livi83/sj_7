@@ -9,4 +9,19 @@
         // Vráti vygenerovaný HTML kód pre navigačné menu
         return $menuItems;
     }
+
+    function add_scripts(){
+        //echo $_SERVER["SCRIPT_NAME"]; //  /sj_7/index.php
+        $page_name = basename($_SERVER["SCRIPT_NAME"],'.php'); //index
+        echo '<script src="js/menu.js"></script>';
+            switch($page_name){
+                case 'index':
+                    echo '<script src="js/slider.js"></script>';
+                    break;
+                case 'qna':
+                    echo '<script src="js/accordion.js"></script>';
+                    break;  
+                }
+    }
+
 ?>
