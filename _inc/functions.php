@@ -24,4 +24,27 @@
                 }
     }
 
+    function add_stylesheets(){
+        echo '<link rel="stylesheet" href="css/style.css">';
+        echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">';
+        $page_name = basename($_SERVER["SCRIPT_NAME"],'.php');
+        switch($page_name){
+            case 'index':
+                echo '<link rel="stylesheet" href="css/slider.css">';
+                break;
+            case 'portfolio':
+                echo '<link rel="stylesheet" href="css/portfolio.css">';
+                echo '<link rel="stylesheet" href="css/banner.css">';
+                break;
+            case 'kontakt':
+                echo '<link rel="stylesheet" href="css/banner.css">';
+                echo '<link rel="stylesheet" href="css/form.css">';
+                break;
+            case 'qna':
+                echo '<link rel="stylesheet" href="css/accordion.css">';
+                echo '<link rel="stylesheet" href="css/banner.css">';
+                break;
+        }
+    }
+
 ?>
