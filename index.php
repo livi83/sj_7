@@ -1,24 +1,25 @@
 <?php
-    include('partials/header.php');
+  include('partials/header.php');
 ?>
+
 <main>
   <section class="slides-container">
     <div class="slide fade">
-      <img src="img/carousel/carousel.jpg">
+      <img src="assets/img/carousel/carousel.jpg">
       <div class="slide-text">
         Prvý nadpis
       </div>
     </div>
     
     <div class="slide fade">
-      <img src="img/carousel/carousel2.jpg">
+      <img src="assets/img/carousel/carousel2.jpg">
       <div class="slide-text">
         Druhý nadpis
       </div>
     </div>
     
     <div class="slide fade">
-      <img src="img/carousel/carousel3.jpg">
+      <img src="assets/img/carousel/carousel3.jpg">
       <div class="slide-text">
         Tretí nadpis
       </div>
@@ -47,6 +48,7 @@
     </div>
   </section>
 </main>
+
 <?php
-    include('partials/footer.php');
+include('partials/footer.php');
 ?>
