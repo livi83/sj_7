@@ -1,5 +1,5 @@
 <?php
-  include_once('_inc/autoload.php');
+require_once('_inc/autoload.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +37,7 @@
             <li><a href="qna.php">Q&A</a></li>
             <li><a href="kontakt.php">Kontakt</a></li>
         -->
+         
         </ul>
         <a class="hamburger" id="hamburger">
             <i class="fa fa-bars"></i>

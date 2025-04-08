@@ -8,12 +8,11 @@ class Qna
         ['question' => 'Otázka 2', 'answer' => 'Odpoveď 2'],
         ['question' => 'Otázka 3', 'answer' => 'Odpoveď 3']
     ];
-    
+
     // Metóda na získanie otázok a odpovedí
     public function index()
     {
         return $this->qnaItems;
     }
 }
-
 ?>

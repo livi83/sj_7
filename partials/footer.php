@@ -26,11 +26,13 @@
         }
 
     ?>
+    
     <!--
     <p><a href="index.php">Domov</a></p>
     <p><a href="qna.php">Q&A</a></p>
     <p><a href="kontakt.php">Kontakt</a></p>
-    -->
+    !-->
+    
   </div>
   <div class="col-25">
     <h4>Nájdete nás</h4>
