@@ -44,3 +44,12 @@ require_once('_inc/autoload.php');
         </a>
       </nav>
     </header>
+<?php
+/*
+$db = new Database();
+$connection = $db->getConnection();
+if($connection){
+  echo  'Máme spojenie';
+}
+*/
+?>
