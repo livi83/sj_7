@@ -20,7 +20,7 @@ if (isset($_GET['delete'])) {
     <h1>Vítaj admin</h1>
 
     <h2>Kontakty</h2>
-
+    <a href="contact-create.php">Vytvoriť správu</a>
     <table border="1">
         
         <tr>
@@ -28,7 +28,9 @@ if (isset($_GET['delete'])) {
             <th>Meno</th>
             <th>Email</th>
             <th>Sprava</th>            
-            <th>Akcia</th>
+            <th>Odstrániť</th>
+            <th>Zobraziť</th>
+            <th>Editovať</th>
         </tr>
         <?php foreach($contacts as $con){
              echo '<tr>';
@@ -38,7 +40,12 @@ if (isset($_GET['delete'])) {
              echo '<td>'.$con['message'].'</td>';
              echo '<td><a href="?delete='.$con['id'].'" 
              onclick="return confirm(\'Určite chcete vymazať túto správu?\')">Delete</a></td>';
+             
+             echo '<td><a href="contact-show.php?id='.$con['id'].'"">Zobraziť</a></td>';
+             echo '<td><a href="contact-edit.php?id='.$con['id'].'"">Editovať</a></td>';
+             
              echo '</tr>';
+
          } 
          ?>
 
